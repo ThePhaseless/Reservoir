@@ -1,5 +1,7 @@
 services:
   reservoir:
     build: .
+    volumes:
+      - ./key:/app/key
     env_file:
       - .env

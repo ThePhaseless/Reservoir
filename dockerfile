@@ -11,6 +11,5 @@ RUN composer update
 RUN composer install
 COPY ./start.sh /app/
 RUN chmod +x /app/start.sh
-COPY ./private.pem /app/
 
 ENTRYPOINT [ "/app/start.sh" ]
