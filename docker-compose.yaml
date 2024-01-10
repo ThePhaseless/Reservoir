@@ -1,5 +1,6 @@
 services:
   reservoir:
+    container_name: reservoir
     build: .
     volumes:
       - ./key:/app/key
